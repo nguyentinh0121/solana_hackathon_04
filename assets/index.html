@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <title>Snapshot-NFT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-logo">
+                        <li>SUPERSTAR</li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-item-link header__navbar-item-link-noiti">Notification</a>
+                        </li>
+                        <li class="header__navbar-item-link header__navbar-item-link-account"><a href="">Account</a>
+                            <ul class="sub-menu">
+                                <div class="user">
+                                    <i class="fa-solid fa-user"></i>
+                                    <li><a href="#">Info</a></li>
+                                </div>
+                                <div class="history">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                    <li><a href="#">History</a></li>
+                                </div>
+                                <div class="logout">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    <li><a href="#">Logout</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid__container">
+                <div class="container__box">
+                    <div class="container__box-Search">
+                        <input id="wallet-address-input" type="text" placeholder="Add A ID Token"
+                            class="container__box-Search--input">
+                    </div>
+                    <!-- <button id="search-button" class="btn-Add"><a href="sucsess.html">Search</a></button> -->
+                    <button id="search-button" onclick="snapshotHolderState()">Search</button>
+                </div>
+                    <div id="balances">
+                        <div class="blances___box">
+                            <h1 id="holderStateDiv"></h1>   
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+<script src="js/index.js"></script>
